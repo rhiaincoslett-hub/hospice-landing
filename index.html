@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate · Midlands Hospice — Building Campaign</title>
+  <meta name="description" content="Support the Midlands Hospice Building Campaign. Help us rebuild the shops and depot that fund free palliative care across Howick and the surrounding Midlands.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="site">
+  <div class="container nav">
+    <a href="#" class="brand">
+      <img src="assets/logo.jpg" alt="Midlands Hospice logo">
+      <span class="wm-name">
+        <span class="wm-top">Midlands Hospice</span>
+        <span class="wm-bot">Howick &amp; Surrounding Areas</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#other">Other Ways to Help</a>
+      <a href="#faq">FAQ</a>
+      <a href="#donate" class="btn btn-primary">Donate Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Building Campaign · 2026</span>
+      <h1>Build the rooms where <em>hope</em> meets every patient at the door.</h1>
+      <p class="lede">
+        Building begins soon to improve our shops and depot — the home of every donated item that funds our patient care. Help us recover as much of that cost as possible, so we can keep supporting families through the final chapter of life.
+      </p>
+
+    </div>
+
+    <!-- ── Donation Card ── -->
+    <div class="donation-card" id="donate">
+      <span class="ribbon"><span class="pulse"></span> Secure donation</span>
+      <h2>Support the Building Campaign</h2>
+      <p class="sub">Every rand goes towards rebuilding the depot and shops that fund Midlands Hospice patient care.</p>
+
+      <div style="margin-top: 22px;">
+        <span class="field-label">Donation Frequency</span>
+        <div class="freq-toggle" role="tablist">
+          <button type="button" class="active" data-freq="once">Once-off</button>
+          <button type="button" data-freq="monthly" title="Coming soon">Monthly · soon</button>
+        </div>
+      </div>
+
+      <span class="field-label" style="margin-top: 22px; display: block;">Choose an Amount</span>
+      <div class="amount-grid">
+        <button type="button" class="amount-chip" data-amount="50">R 50<small>A friend</small></button>
+        <button type="button" class="amount-chip" data-amount="100">R 100<small>A neighbour</small></button>
+        <button type="button" class="amount-chip" data-amount="250">R 250<small>A supporter</small></button>
+        <button type="button" class="amount-chip active" data-amount="500">R 500<small>A patron</small></button>
+        <button type="button" class="amount-chip" data-amount="1000">R 1,000<small>A guardian</small></button>
+        <button type="button" class="amount-chip" data-amount="2500">R 2,500<small>A builder</small></button>
+      </div>
+
+      <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
+        <input required type="hidden" name="cmd" value="_paynow">
+        <input required type="hidden" name="receiver" value="13477899">
+        <input required type="hidden" name="item_name" maxlength="255" value="Building Campaign">
+        <input type="hidden" name="item_description" maxlength="255" value="Building starts soon to improve our shops and depot. Help us recover as much of that cost as possible, so that we continue supporting patient care where it's needed most.">
+
+        <div style="margin-top: 14px;">
+          <label for="PayFastAmount" class="field-label">Or enter a custom amount (ZAR)</label>
+          <div class="input-wrap">
+            <span class="currency">R</span>
+            <input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="500">
+          </div>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="donate-btn">
+            <span>Donate <span class="amt">R 500</span> with PayFast</span>
+            <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <div class="secure-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Secured by <strong>PayFast</strong> · 256-bit encryption · NPO 003-783</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── OTHER WAYS ── -->
+<section class="block other" id="other">
+  <div class="container">
+    <span class="kicker">Beyond the donation</span>
+    <h2>Other ways your support keeps the doors open.</h2>
+
+    <div class="other-grid">
+      <a class="other-card" href="https://www.midlandshospice.org.za/contact-2/" target="_blank" rel="noopener">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+        </div>
+        <h4>Donate goods</h4>
+        <p>Drop preloved items at any of our three shops — every piece becomes patient care.</p>
+        <span class="more">Find a drop-off →</span>
+      </a>
+      <a class="other-card" href="https://www.midlandshospice.org.za/contact-2/" target="_blank" rel="noopener">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h4>Volunteer</h4>
+        <p>Sort, drive, knit, help. We'll find what fits your week.</p>
+        <span class="more">Sign up →</span>
+      </a>
+      <a class="other-card" href="https://www.midlandshospice.org.za/contact-2/" target="_blank" rel="noopener">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <h4>Leave a legacy</h4>
+        <p>A bequest in your will lets your kindness outlive you. We'll guide your family through it.</p>
+        <span class="more">Speak to us →</span>
+      </a>
+      <a class="other-card" href="https://www.midlandshospice.org.za/contact-2/" target="_blank" rel="noopener">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+        </div>
+        <h4>Host an event</h4>
+        <p>Run, bake, sing, stitch — any gathering that raises a few hundred rand changes a week of care.</p>
+        <span class="more">Event toolkit →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="block faq" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <span class="kicker">FAQ</span>
+        <h2>Honest answers to the questions we hear most.</h2>
+        <p class="lede">Can't see your question? Phone the office on 033 330 5257</p>
+      </div>
+
+      <div>
+        <details class="q" open>
+          <summary>Is my donation tax-deductible?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
+          <p class="a">Yes — Midlands Hospice is a registered NPO (002-413). Please email us for a Section 18A receipt.</p>
+        </details>
+        <details class="q">
+          <summary>How does PayFast keep my card safe?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
+          <p class="a">PayFast is a PCI-DSS Level 1 certified payment processor used by thousands of South African organisations. Your card details never touch our servers — they go directly to PayFast's encrypted gateway.</p>
+        </details>
+        <details class="q">
+          <summary>Can I donate by EFT or in person?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
+          <p class="a">Absolutely. Please contact us via email - admin@midlandshospice.org, or you're welcome at the office Mon–Fri, 8:00am–4:00pm.</p>
+        </details>
+        <details class="q">
+          <summary>What happens once the building is finished?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </summary>
+          <p class="a">The improved depot lets us process about three times the donated stock, which translates directly into more home visits.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/logo.jpg" alt="Midlands Hospice">
+          <div>
+            <div class="nm">Midlands Hospice</div>
+            <div class="tag">Offering Hope · Providing Support · Honouring Life</div>
+          </div>
+        </div>
+        <p style="color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.6; max-width: 36ch;">
+          Compassionate palliative care to families across Howick and the surrounding Midlands.
+        </p>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:0333305257">033 330 5257</a>
+        <a href="mailto:admin@midlandshospice.org">admin@midlandshospice.org</a>
+        <a href="https://maps.app.goo.gl/Gq4xcP1BGho6c6k88" target="_blank" rel="noopener noreferrer">7 Mansfield Rd, Greendale Park, Howick, 3290</a>
+        <a href="#">NPO 002-413</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Midlands Hospice. All rights reserved. Developed withㅤ♡ㅤby Nala Digital </span>
+      <span>Payments processed securely by PayFast.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
